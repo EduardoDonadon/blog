@@ -5,7 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
+<title>Primeiro JSP</title>
+<style>
+	h1 {
+		color: red
+	}
+</style>
 </head>
 <body>
 <%
@@ -22,10 +28,10 @@
 	Connection connection = null;
 	
 	try {
-		 connection = DriverManager.getConnection(url,user,password);
+		connection = DriverManager.getConnection(url,user,password);
 		//resp.getWriter().append("Conectou <br>");
-		 out.append("Conectado <br>");
-		 System.out.println("Conectado");
+		out.append("<h1>Conectado </h1>");
+		System.out.println("Conectado");
 	} catch (SQLException e) {
 		e.printStackTrace();
 	}
