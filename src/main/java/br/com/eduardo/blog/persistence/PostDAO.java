@@ -19,4 +19,8 @@ public class PostDAO {
 	public List<Post> listar() {
 		return posts;
 	}
+	
+	public void save(Post post) {
+		posts.add(post);
+	}
 }
